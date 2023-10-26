@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.form-control {
+    background: #F5EFE1 !important;
+    border: none !important;
+    border-radius: 20px !important;
+}
+
+
+.style-button {
+    background: rgba(77, 163, 250, 0.5) !important;
+    color: #000 !important;
+    border: none;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+}
+
+

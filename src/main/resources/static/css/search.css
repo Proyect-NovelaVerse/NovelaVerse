@@ -1,0 +1,83 @@
+/* Estilos para la tarjeta */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    max-height: 250px;
+    min-height: 250px;
+}
+
+.ratings {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+}
+
+
+.bi-star-fill {
+    color: gold;
+    font-size: 16px;
+}
+
+.bi-eye {
+    font-size: 16px;
+    margin-left: 5px;
+    color: black;
+}
+
+.style_name_novel {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.style_name_novel:hover {
+    color: #007BFF;
+}
+
+
+.style_container {
+    padding: 10px;
+}
+
+.card-text {
+    margin-top: 10px;
+    line-height: 1.4;
+    max-height: 1.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.margin-top{
+    margin-top: 100px;
+}
+
+.form-control {
+    background: #F5EFE1 !important;
+    border: none !important;
+    border-radius: 20px !important;
+}
+
+
+.style-button {
+    background: rgba(77, 163, 250, 0.5) !important;
+    color: #000 !important;
+    border: none;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+}

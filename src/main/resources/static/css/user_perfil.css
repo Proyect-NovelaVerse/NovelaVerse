@@ -1,0 +1,123 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+section {
+    margin-top: 20px;
+    /* display: none; */
+}
+
+:target {
+    display: block;
+}
+.label {
+    display: inline-block;
+    width: 350px;
+    margin-right: 10px;
+}
+
+.result {
+    display: inline-block;
+}
+
+.card-info{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.664);
+    margin-bottom: 10px;
+}
+
+.profile-settings {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(158, 155, 155);
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.profile-settings.show {
+    display: block;
+}
+
+.profile-settings h3 {
+    margin-top: 0;
+}
+
+.profile-settings label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profile-settings input[type="text"],
+.profile-settings textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.profile-settings button {
+    margin-top: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    /* margin-left: 12px; */
+    
+}
+.profile-container{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: black;
+    /* margin-right: 130px; */
+    width: 1100px;
+    color: rgba(255, 255, 255, 0.664);
+    margin: 10px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border:2px solid black;
+    overflow: hidden;
+}
+
+.profile-info {
+    flex-grow: 5;
+    margin-left: 20px;
+}
+.profile-info p{
+    display:inline;
+}
+.profile-info #email{
+    margin-left: 20px;
+}
+

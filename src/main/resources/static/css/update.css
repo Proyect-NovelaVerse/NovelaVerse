@@ -1,0 +1,84 @@
+/* POPPINS FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.fixed-height-container {
+    height: 450px; /* Ajusta la altura según tus necesidades */
+    
+}
+.side-image {
+  background-image: url("/img/vistaFondo/user.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+.side-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px 0 0 10px;
+}
+.text{
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.row{
+  width: 900px;
+  height: 550px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0px;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box {
+  width: 330px;
+  box-sizing: border-box;
+}
+.input-field , .form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* padding: 0 10px 0 10px; */
+}
+
+.submit , .submit-a {
+  border: none;
+  outline: none;
+  height: 45px;
+  background-color: #adadaf;
+  /* background: #ececec; */
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.submit-a:hover {
+  background: rgba(207, 55, 105, 0.937);
+  color: #fff;
+}
+.submit:hover {
+  background: rgba(54, 127, 206, 0.937);
+  color: #fff;
+}

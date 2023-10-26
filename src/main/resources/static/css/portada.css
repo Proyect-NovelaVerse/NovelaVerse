@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url("/img/navFondo/biblia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* overflow: hidden; */
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+
+/* probando nav */
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39, 39, 39, 0.993), transparent);
+    z-index: 100;
+
+    position: sticky;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+}
+.nav.hidden {
+    transform: translateY(-100%);
+}
+
+
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.76);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.nav-button{
+    margin-right: 50px;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.699);
+}
+/* #registerBtn{
+    margin-left: 10px;
+} */
+.btn.white-btn{
+    background: rgba(255, 255, 255, 0.774);
+}
+.btn.btn.white-btn:hover{
+    background: rgb(255, 255, 255);
+}
+.nav-menu-btn{
+    display: none;
+}
+  /* fin del nav */
+/* ... (otras reglas CSS) ... */
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-btn {
+    display: none;
+    cursor: pointer;
+    z-index: 101;
+}
+@media (max-width: 768px) {
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        padding: 20px 0;
+        background-color: rgba(39, 39, 39, 0.993);
+        width: 100%;
+        top: 100px;
+        left: 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-menu ul.show {
+        display: flex;
+    }
+
+    .nav-menu ul li {
+        margin: 0;
+        padding: 10px 0;
+        
+    }
+
+    .nav-menu-btn {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav.hidden .burger {
+        background-color: transparent;
+    }
+    .burger {
+        color: #fff;
+        margin: 5px 0;
+        transition: 0.5s;
+        font-size: 30px;
+    }
+}
+ /* fin del metdo responsivo */
+.container{
+    margin-top: 10px;
+}
+.home {
+    /* margin-top: 5rem; */
+    position: relative;
+    height: 300px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/img/navFondo/novel.jpg") no-repeat center center / cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.home-content {
+    z-index: 1;
+}
+
+.box{
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    margin-top: 2rem;
+    /* padding: 40px; */
+    /* background: rgba(112, 112, 114, 0.281); */
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+}
+/* .row{
+    margin-right: 80px;
+    margin-left: 80px;
+} */
+.box-container{
+    /* border: 2px solid white;
+    width: 560px; */
+    margin-left: 30px;
+}
+
+#prueba{
+    transition: transform 0.3s;
+}
+#prueba:hover {
+    transform: translateY(-5px);
+}
+
+
+#size{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    max-height: 200px;
+    min-height: 200px;
+}

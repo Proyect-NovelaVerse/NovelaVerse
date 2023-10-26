@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;  
+}
+
+/* Estilos para la tarjeta de novela */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+.style_num {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.state_novel_style {
+  color: #333;
+}
+
+.ratings {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+}
+
+.style_name_novel {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.style_name_novel:hover {
+  color: #007BFF;
+}
+
+.bi-star-fill {
+  color: gold;
+  font-size: 16px;
+}
+
+.bi-eye {
+  font-size: 16px;
+  margin-left: 5px;
+  color: black;
+}
+
+article {
+  margin-top: 80px;
+}
+
+.state{
+  display: contents;
+}
+
+.card-text {
+  margin-top: 10px;
+
+  line-height: 1.4;
+  max-height: 1.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}

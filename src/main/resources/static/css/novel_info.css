@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px dotted red; */
+}
+main{
+    background-color: rgba(0, 0, 0, 0.658);
+    border-radius: 15px;
+    margin-top: 80px;
+}
+body{
+    background-image: url('../img/Logos/interior-biblioteca.jpg')!important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    color: aliceblue;
+}
+
+  /* Estilo personalizado para el formulario de rating */
+.rating {
+    display: inline-flex;
+    align-items: center;
+}
+.rating label {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.rating input[type="radio"] {
+    display: none;
+}
+.rating input[type="radio"]:checked + label {
+    
+    color: #ffc107;
+}
+
